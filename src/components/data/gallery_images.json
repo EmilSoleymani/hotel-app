@@ -1,0 +1,27 @@
+[
+    {
+        "imgSrc": "https://landonhotel.com/images/hotel/intro_room.jpg",
+        "altTxt": "Intro Gallery Room Sample Pictures",
+        "className": ""
+    },
+    {
+        "imgSrc": "https://landonhotel.com/images/hotel/intro_pool.jpg",
+        "altTxt": "Intro Gallery Pool Sample Pictures",
+        "className": ""
+    },
+    {
+        "imgSrc": "https://landonhotel.com/images/hotel/intro_dining.jpg",
+        "altTxt": "Intro Gallery Dining Sample Pictures",
+        "className": ""
+    },
+    {
+        "imgSrc": "https://landonhotel.com/images/hotel/intro_attractions.jpg",
+        "altTxt": "Intro Gallery Attractions Sample Pictures",
+        "className": ""
+    },
+    {
+        "imgSrc": "https://landonhotel.com/images/hotel/intro_wedding.jpg",
+        "altTxt": "Intro Gallery Wedding Sample Pictures",
+        "className": "hidesm"
+    }
+]
