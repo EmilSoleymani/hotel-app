@@ -1,7 +1,31 @@
-import servicesData from './data/services.json'
-import accessabilityData from './data/accessibility.json'
+import { useState, useEffect } from 'react'
+
+const productionURL = "https://og2z1zbw80.execute-api.us-east-2.amazonaws.com/Production"
 
 const HotelInfo = () => {
+  const [servicesData, setServicesData] = useState([])
+  const [accessabilityData, setAccessabilityData] = useState([])
+
+  const loadServices = async() => {
+    const response = await fetch(productionURL + "/services")
+    let jsonData = await response.json()
+
+    setServicesData(jsonData)
+  }
+
+  const loadAccessibility = async() => {
+    const response = await fetch(productionURL + "/accessability")
+    let jsonData = await response.json()
+
+    setAccessabilityData(jsonData)
+  }
+
+  useEffect(() => {
+    loadServices()
+    loadAccessibility()
+  }, [])
+
+
   return (
     <div className="scene" id="hotelinfo">
         <article className="heading">
